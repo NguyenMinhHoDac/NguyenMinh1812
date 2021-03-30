@@ -6,7 +6,20 @@ form{
     margin: auto;
 
 }
-
+#answer{
+    border: black solid;
+    width: 50%;
+    height: 200px;
+    background-color: rgb(77, 154, 255);
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+strong{
+    font-size: 20px;
+    padding-top: 20px;
+    display: block;
+}
 span{
     text-align: center;
     display: inline-block;
