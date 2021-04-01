@@ -13,12 +13,12 @@
         <div id="b1">
             <div class="b2">
             <span>Fullname</span>
-            <input type="text" id="fullname">
+            <input type="text" pattern="[A-Z a-z]{1,30}" id="fullname" placeholder="1-30 ky tu {a-z}">
             </div>
       
             <div class="b2">
             <span>Age</span>
-            <input type="Number" id="age">
+            <input type="Number" min="18" max="35" id="age" placeholder="{18-35}">
             </div>
         </div>
         <button type="submit">ADD</button>
