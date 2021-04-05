@@ -1,0 +1,53 @@
+form{
+    border: black solid;
+    width: 50%;
+    height: 200px;
+    background-color: pink;
+    margin: auto;
+
+}
+#answer{
+    border: black solid;
+    width: 50%;
+    background-color: rgb(77, 154, 255);
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+strong{
+    font-size: 20px;
+    padding-top: 20px;
+    display: block;
+}
+span{
+    text-align: center;
+    display: inline-block;
+    width: 60px;
+}
+input{
+    display: inline-block;
+    width: 25%;
+}
+
+#b1{
+    text-align: center;
+    padding: 50px 0 25px 0;
+}
+.b2{
+    padding: 5px 0 5px 0;
+
+    display: block;
+    text-align: center;
+}
+
+button{
+    background-color: green;
+    text-align: center;
+    width: 25%;
+    padding: 5px 15px 5px 15px;
+    margin: auto;
+    display: block;
+}
+ul{
+    text-align: left;
+}
