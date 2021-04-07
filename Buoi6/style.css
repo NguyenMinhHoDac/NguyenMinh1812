@@ -1,21 +1,23 @@
 form{
-    border: black solid;
     width: 50%;
     height: 200px;
-    background-color: pink;
+    background-color: rgb(40, 158, 255);
     margin: auto;
-
+    border-radius: 25px;
+    margin-top: 100px;
 }
 #answer{
-    border: black solid;
     width: 50%;
-    background-color: rgb(77, 154, 255);
+    background-color: rgb(111, 190, 255);
     margin: auto;
     margin-top: 50px;
     text-align: center;
+    border-radius: 25px;
 }
 strong{
     font-size: 20px;
+    text-align: center;
+    font-family: cursive;
     padding-top: 20px;
     display: block;
 }
@@ -31,7 +33,7 @@ input{
 
 #b1{
     text-align: center;
-    padding: 50px 0 25px 0;
+    padding: 25px 0 25px 0;
 }
 .b2{
     padding: 5px 0 5px 0;
@@ -41,7 +43,7 @@ input{
 }
 
 button{
-    background-color: green;
+    background-color: rgb(121, 121, 121);
     text-align: center;
     width: 25%;
     padding: 5px 15px 5px 15px;

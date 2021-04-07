@@ -5,8 +5,57 @@ body{
     background-color: #1c1e21;
     width: 100%;
     height: 56px;
-    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+    .icon1{
+        width: 40x;
+        height:40px;
+    }
+    .icon{
+        color: rgba(255, 255, 255, 0.616);
+        font-size: 20px;
+        width: 8%;
+        text-align: center;
+    }
+    .block1>input{
+        width: 20%;
+        background-color: rgba(68, 68, 68, 0.411);
+        border-radius: 25px;
+        height: 70%;
+        border: none;
+        color: rgba(255, 255, 255, 0.774);
+    }
+    .block1>div{
+        width: 10%;
+        height: 70%;
+        background-color: #0e3b7586;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        color: #2d88ff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    .imgicon{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    .icon2{
+        color: rgba(255, 255, 255, 0.616);
+        font-size: 20px;
+        text-align: center;
+        background: rgba(68, 68, 68, 0.411);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
 .block2{
     background-color: rgb(59, 59, 59);
     width: 75%;
