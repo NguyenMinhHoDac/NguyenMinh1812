@@ -10,22 +10,37 @@
 <body>
     
     <form id="form">
+        <h1>Information</h1>
         <div id="b1">
             <div class="b2">
             <span>Fullname</span>
-            <input type="text" pattern="[A-Z a-z]{1,30}" id="fullname" placeholder="1-30 ky tu {a-z}">
+            <input type="text" id="fullname">
             </div>
       
             <div class="b2">
             <span>Age</span>
-            <input type="Number" id="age" placeholder="{0-100}">
+            <input type="Number" id="age">
             </div>
         </div>
-        <button type="submit">ADD</button>
+        <button type="submit">Submit</button>
     </form>
     <div id="answer">
+        <h1>ADD   <br>New Member</h1>
         <strong>List</strong>
-        <ul id="list"></ul>
+        <div class="b3">
+            <div class="list" id="list1">
+                <span>Name</span> 
+                <br>
+            </div>
+            <div class="list" id="list2">
+                <span>Age</span>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div id="box">
+        <p>Dữ liệu sai. Vui lòng nhập lại!</p>
+        <button onclick="closebox()">Close</button>
     </div>
     <script src="index.js"></script>
 </body>
