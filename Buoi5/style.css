@@ -1,6 +1,7 @@
 body{
     margin: 0;
-    background-color: rgb(26, 26, 26);height: 1000px;
+    background-color: rgb(26, 26, 26);
+    height: 1000px;
 }
 .block1{
     background-color: #1c1e21;
@@ -9,13 +10,19 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: sticky;
-    top 0;
+    position: fixed;
+    top: 0;
+    z-index: 5;
 }
     .icon1{
         width: 40x;
         height:40px;
         margin-left: 10px;
+    }
+    .icon6{
+        color: rgba(255, 255, 255, 0.671);
+        position: absolute;
+        left: 6.4%;
     }
     .icon{
         color: rgba(255, 255, 255, 0.616);
@@ -27,6 +34,17 @@ body{
         justify-content: center;
         align-items: center;
     }
+    .new{
+        background-color: rgb(255, 43, 43);
+        color: white;
+        border-radius: 10px;
+        padding: 1px 5px 1px 5px;
+        font-size: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        position: absolute;
+        top: -10px;
+        left: 40.5%;
+    }
     .icon:hover{
         background-color: rgba(80, 80, 80, 0.603);
         height: 90%;
@@ -34,11 +52,12 @@ body{
     }
     .block1>input{
         width: 20%;
-        background-color: rgba(68, 68, 68, 0.411);
+        background-color: rgba(77, 76, 76, 0.719);
         border-radius: 25px;
         height: 70%;
         border: none;
-        color: rgba(255, 255, 255, 0.774);
+        color: white;
+        font-size: 15px;
     }
     .block1>div{
         width: 10%;
@@ -79,6 +98,7 @@ body{
 .block{
     background: linear-gradient( rgba(72, 157, 255, 0.541),#595e63,#37393b, #242526);
     text-align: center;
+    margin-top: 56px;
 }
 .block2{
     background-color: rgb(59, 59, 59);
@@ -95,6 +115,9 @@ body{
         bottom: -10px;
         left: 41%;
     }
+    .block2>img:hover{
+        filter: brightness(110%);
+    }
     .camera1{
         color: white;
         background-color: rgba(255, 255, 255, 0.233);
@@ -104,6 +127,9 @@ body{
         bottom: -4px;
         left: 54%;
         font-size: 18px;
+    }
+    .camera1:hover{
+        background-color:  rgba(255, 255, 255, 0.288);
     }
     .block2-2{
         background-color: rgba(255, 255, 255, 0.137);
@@ -164,10 +190,20 @@ body{
     margin: auto;
 }
     .block4>span{
-        padding: 0 16px 0 16px;
+        padding: 17px 16px 0 16px;
+        height: 55%;
+        border-radius: 5px;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 12x;
         color: rgba(245, 245, 245, 0.705);
+    }
+    .block4-3:hover{
+        background-color: rgba(80, 80, 80, 0.603);
+    }
+    #now{
+        color: #2e89ff;
+        border-radius: 0px;
+        border-bottom: #2e89ff 3px solid;
     }
     .block4>button{
         height: 60%;
@@ -179,19 +215,69 @@ body{
         color: whitesmoke;
         font-weight: bold;
     }
+    .block4-1:hover{
+        filter: brightness(110%);
+    }
+    .block4-2:hover{
+        background-color: rgba(150, 150, 150, 0.39);
+    }
 
-.icon5{
+.block5>img{
+    width: 47x;
+    height: 47px;
+    border-radius: 50%;
+    position: fixed;
+    right: 1.5%;
+    bottom: 75px;
+}
+    .icon5{
     background-color:rgba(80, 80, 80, 0.774);
     color: whitesmoke;
     font-size: 18px;
     padding: 12px 10px 10px 15px;
     border-radius: 50%;
-    width: 20px;
-    height: 23px;
+    width: 23px;
+    height: 25px;
     text-align: center;
     font-weight: 100;
     position: fixed;
-    right: 2%;
-    bottom: 15px;
+    right: 1.5%;
+    bottom: 17px;
+    }
+    .block5-1:hover{
+        filter: brightness(120%);
+    }
+#block6{
+    width: 26%;
+    height: 450px;
+    background-color: #242526;
+    position: fixed;
+    right: 7%;
+    bottom: 0;
+    border-radius: 10px 10px 0 0;
+    display: none;
 }
+    #block6>img{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        margin: 8px 0 0 8px;
+    }
+    #block6>span{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        width: 30%;
+        margin-top: 17px;
+        margin-left: 10px;
+    }
+    .icon6{
+        color: rgba(255, 255, 255, 0.76);
+        width: 50%; 
+        margin-left: 50%;
+        margin-top: 17px;
+    }
+        .icon6-1{
+            padding-left: 14px;
+        }
     
