@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: rgb(26, 26, 26);height: 1000px;
 }
 .block1{
     background-color: #1c1e21;
@@ -8,16 +9,28 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: sticky;
+    top 0;
 }
     .icon1{
         width: 40x;
         height:40px;
+        margin-left: 10px;
     }
     .icon{
         color: rgba(255, 255, 255, 0.616);
         font-size: 20px;
         width: 8%;
         text-align: center;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .icon:hover{
+        background-color: rgba(80, 80, 80, 0.603);
+        height: 90%;
+        border-radius: 10px;
     }
     .block1>input{
         width: 20%;
@@ -38,6 +51,9 @@ body{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;
     }
+    .block1-1:hover{
+        background-color:  #366eb886;
+    }
     .imgicon{
         width: 30px;
         height: 30px;
@@ -56,6 +72,14 @@ body{
         display: flex;
         justify-content: center;
     }
+    .icon2:hover{
+        background-color: rgba(116, 116, 116, 0.411);
+    }
+
+.block{
+    background: linear-gradient( rgba(72, 157, 255, 0.541),#595e63,#37393b, #242526);
+    text-align: center;
+}
 .block2{
     background-color: rgb(59, 59, 59);
     width: 75%;
@@ -98,6 +122,76 @@ body{
         align-items: center;
         border-radius: 5px;
     }
+    .block2-2:hover{
+        background-color:  rgba(255, 255, 255, 0.288);
+    }
+.block3{
+    width: 70%;
+    border-bottom: solid 0.2px rgba(177, 177, 177, 0.288);
+    text-align: center;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    .block3>strong{
+        font-size: 33px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 35px;
+        padding-bottom: 0;
+        font-weight: bold;
+    }
+    .block3>p{
+        color: #2e89ff;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        padding-bottom: 15px;
+        padding-top: 0;
+        margin-top: 5px;
+    }
+    .block3>p:hover{
+        text-decoration: underline;
+    }
+.block4{
+    height: 60px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+    .block4>span{
+        padding: 0 16px 0 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12x;
+        color: rgba(245, 245, 245, 0.705);
+    }
+    .block4>button{
+        height: 60%;
+        border-radius: 5px;
+        border: none;
+        margin-left: 5px;
+        font-size: 14px;
+        background-color: rgba(80, 80, 80, 0.466);
+        color: whitesmoke;
+        font-weight: bold;
+    }
 
-
+.icon5{
+    background-color:rgba(80, 80, 80, 0.774);
+    color: whitesmoke;
+    font-size: 18px;
+    padding: 12px 10px 10px 15px;
+    border-radius: 50%;
+    width: 20px;
+    height: 23px;
+    text-align: center;
+    font-weight: 100;
+    position: fixed;
+    right: 2%;
+    bottom: 15px;
+}
     
