@@ -1,11 +1,20 @@
-let box = document.getElementById('box');
-let close = document.getElementById('block6');
+let ava = document.getElementById('box');
+let chatbox = document.getElementById('block6');
+
 function boxchat(){
-    box.style.display="none";
-    close.style.display="flex";
+    ava.style.display="none";
+    chatbox.style.display="block";
 }
 
-function close(){
-    close.style.display="none";
-    box.style.display="block";
+document.getElementById('hide').onclick=() => {
+    ava.style.display="block";
+    chatbox.style.display="none";
+}
+
+document.getElementById('close').onclick=() => {
+    chatbox.style.display="none";
+}
+
+document.getElementById('search').onclick=() => {
+    document.getElementById('find').style.display="none";
 }

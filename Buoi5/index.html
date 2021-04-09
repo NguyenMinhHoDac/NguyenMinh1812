@@ -11,8 +11,8 @@
 <body>
     <div class="block1">
         <img class="icon1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png">
-        <i class="fas fa-search icon6"></i>
-        <input type="text" placeholder="        Tìm kiếm trên Facebook">
+        <i class="fas fa-search icon6" id="find" ></i>
+        <input type="text" id="search" placeholder="        Tìm kiếm trên Facebook">
         <i class="fas fa-home icon"></i>
         <i class="fas fa-tv icon"></i>
         <p class="new">9+</p>
@@ -56,13 +56,15 @@
         <i class="fas fa-edit icon5 block5-1"></i>
     </div>
     <div id="block6">
-        <img class="block6-1" src="https://scontent.fsgn2-5.fna.fbcdn.net/v/t1.6435-9/150082242_1430472140650096_2994224548256427455_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=Ak2BKO1tIwkAX8Jxpzt&_nc_ht=scontent.fsgn2-5.fna&oh=19f19678441fb9d8124f6ce668ee2b7d&oe=60962B3B">
-        <span>Em Phượng</span>
-        <div class="icon6">
-            <i class="fas fa-video icon6-1"></i>
-            <i class="fas fa-phone-alt icon6-1"></i>
-            <i class="fas fa-minus icon6-1"></i>
-            <i class="fas fa-times icon6-1" onclick="close()"></i>
+        <div class="top">
+            <img class="block6-1" src="https://scontent.fsgn2-5.fna.fbcdn.net/v/t1.6435-9/150082242_1430472140650096_2994224548256427455_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=Ak2BKO1tIwkAX8Jxpzt&_nc_ht=scontent.fsgn2-5.fna&oh=19f19678441fb9d8124f6ce668ee2b7d&oe=60962B3B">
+            <span>Em Phượng</span>
+            <div class="icon7">
+                <i class="fas fa-video icon7-1"></i>
+                <i class="fas fa-phone-alt icon7-1"></i>
+                <i class="fas fa-minus icon7-1" id="hide" ></i>
+                <i class="fas fa-times icon7-1" id="close" ></i>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
