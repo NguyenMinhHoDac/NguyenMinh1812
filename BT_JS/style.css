@@ -1,0 +1,126 @@
+body{
+    background-color: rgb(36, 36, 36);
+    margin: 0;
+}
+#name{
+    width: 20%;
+    height: 500px;
+    position: fixed;
+    top: 50px;
+}
+    #name>h1{
+        background-color: rgb(19, 178, 252);
+        text-align: right;
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        color: white;
+        padding-right: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        font-style: italic;
+        margin-bottom: 25px;
+    }
+    #name>p{
+        background-color: rgb(255, 119, 78);
+        width: 60%;
+        text-align: right;
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        color: white;
+        padding-right: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        font-style: italic;
+    }
+
+#box{
+    background-color: rgba(51, 51, 51, 0.884);
+    width: 60%;
+    height: 400px;
+    position: fixed;
+    left: 30%;
+    top: 150px;
+    border-radius: 10px;
+}
+    #exname{
+        background-color: rgb(19, 178, 252);
+        width: 13%;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+    #text{
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 35px;
+        left: 21%;
+        width: 70%;
+        height: 150px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .box1{
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        width: 60%;
+    }
+        .box1>p{
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            margin-top: 0;
+        }
+        .box1>input{
+            margin-left: 10%;
+            width: 80%;
+            margin-top: 0px;
+            background-color: rgba(29, 29, 29, 0.692);
+            height: 25px;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 0;
+            padding-left: 10px;
+        }
+    .box2{
+        position: absolute;
+        top: 72%;
+        left: 25%;
+        width: 60%;
+    }
+        .box2>p{
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            margin-top: 0;
+        }
+        #out{
+            margin-left: 10%;
+            width: 80%;
+            margin-top: 0px;
+            background-color: rgba(29, 29, 29, 0.692);
+            height: 25px;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding-left: 10px;
+        }
+    #box>button{
+        background-color: rgb(77, 221, 113);
+        position: absolute;
+        top: 75%;
+        right: 5%;
+        border: none;
+        padding: 10px 15px 10px 15px;
+        border-radius: 5px;
+        color: rgb(49, 49, 49);
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 700;
+    }

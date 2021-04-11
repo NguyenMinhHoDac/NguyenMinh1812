@@ -8,9 +8,9 @@ function kt(x){
     }
     for(let i=1; i<A.length;i++)
     {
-        if (A[i]>A[i-1]) return false;
-        else return true;
+        if (A[i]>A[i-1]) return false;    
     }
+    return true;
 }
 let t=kt(x);
 console.log(t);

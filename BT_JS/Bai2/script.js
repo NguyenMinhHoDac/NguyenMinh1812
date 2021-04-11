@@ -1,6 +1,6 @@
 let today = new Date();
 
-console.log(today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear());
-console.log(today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear());
-console.log((today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear());
-console.log((today.getMonth()+1)+'/'+today.getDate()+'/'+today.getFullYear());
+document.getElementById("date1").innerHTML = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+document.getElementById("date2").innerHTML = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+document.getElementById("date3").innerHTML = (today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear();
+document.getElementById("date4").innerHTML = (today.getMonth()+1)+'/'+today.getDate()+'/'+today.getFullYear();
