@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+}
+#under{
+    width: 55%;
+    height: 400px;
+    background-color: rgb(44, 44, 44);
+    position: absolute;
+    top: 60px;
+    left: 24%;
+    z-index: -2;
+}
+#form{
+    width: 55%;
+    height: 400px;
+    margin: auto;
+    margin-top: 50px;
+    border: solid 1px;
+    background-color: white;
+}
+    #form>h1{
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        padding-top: 50px;
+        text-decoration: underline 2px;
+        text-underline-offset: 10px;
+    }
+    #form>p{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
+        padding-left: 50px;
+        margin-top: 50px;
+        display: inline-block;
+    }
+    #note1{
+        color: red;
+        font-size: 15px;
+        position: absolute;
+        font-style: italic;
+        top: 40%;
+        left: 38%;
+        display: none;
+    }
+    #name{
+        width: 60%;
+        margin-left: 5%;
+    }
+    #category{
+        margin-left: 5%;
+    }
+    #note2{
+        color: red;
+        font-size: 15px;
+        position: absolute;
+        font-style: italic;
+        top: 50%;
+        left: 32%;
+        display: none;
+    }
+    #input-image{
+        margin-left: 10%;
+        width: 50%;
+    }
+    #preview-image{
+       width: ;
+       height: ;
+       object-fit: cover;
+    }
+    #button{
+        position: absolute;
+        top: 60%;
+        right: 40%;
+    }
+.table{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+    td{
+        vertical-align: middle;
+    }
+    #cell-img{
+        object-fit: cover;
+        height: 80px;
+        width: 140px;
+    }
+    #cell-name{
+        border: none;
+    }
+    #button-save{
+        display: none;
+    }
+    #button-cancel{
+        display: none;
+    }
+    #input-newimage{
+        display: none;
+        font-size: 15px;
+        width: 28%;
+    }
+    #cell4{
+        width: 30%;
+    }
