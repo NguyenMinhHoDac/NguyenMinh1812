@@ -61,6 +61,15 @@ body{
         margin-left: 10%;
         width: 50%;
     }
+    #note3{
+        color: red;
+        font-size: 15px;
+        position: absolute;
+        font-style: italic;
+        top: 50%;
+        left: 47%;
+        display: none;
+    }
     #preview-image{
        width: ;
        height: ;
@@ -100,4 +109,37 @@ body{
     }
     #cell4{
         width: 30%;
+    }
+    td{
+        position: relative;
+    }
+    #note4{
+        color: red;
+        font-size: 15px;
+        position: absolute;
+        font-style: italic;
+        top: 64%;
+        left: 3%;
+        display: none;
+    }
+    #cell3{
+        width: 20%;
+    }
+    #note5{
+        color: red;
+        font-size: 15px;
+        position: absolute;
+        font-style: italic;
+        top: 64%;
+        left: 0;
+        display: none;
+    }
+    #note6{
+        color: red;
+        font-size: 15px;
+        position: absolute;
+        font-style: italic;
+        top: 64%;
+        left: 50%;
+        display: none;
     }
