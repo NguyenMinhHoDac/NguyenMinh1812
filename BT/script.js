@@ -9,6 +9,22 @@ function  preview_image(event){
 }
 var id=0;
 id = sessionStorage.getItem('id');
+
+function validateName(name){
+    if (name==''||name.length>10||(name.charCodeAt(0)>=48 && name.charCodeAt(0)<=57))
+        return false;
+    else return true;
+}
+function validateCategory(category){
+    if(category=='Chọn khóa') return false;
+    else return true;
+}
+function validateImg(img){
+    if(img==''||(img.indexOf('.png')==-1 && img.indexOf('.jpg')==-1 && img.indexOf('jpeg')==-1 && img.indexOf('.gif')==-1))
+        return false;
+    else return true;
+}
+
 function themDuLieu(event){
     event.preventDefault();
     let name = document.querySelector("#name").value; 
@@ -16,54 +32,49 @@ function themDuLieu(event){
     let category = document.querySelector("#category").value;
     let getimg = document.querySelector("#preview-image").src;
     let img = document.getElementById("input-image").value;
-    if (name==''||name.length>10||(name.charCodeAt(0)>=48 && name.charCodeAt(0)<=57)){
-        document.getElementById("note1").style.display="block";
-        document.getElementById("note2").style.display="none";
-        document.getElementById("note3").style.display="none";
-    }
-    else{
+    if (validateName(name))
         document.getElementById("note1").style.display="none";
-        if(category=='Chọn khóa'){
-            document.getElementById("note2").style.display="block";
-        }
-        else{   
-            document.getElementById("note2").style.display="none"; 
-            if(img==''||(img.indexOf('.png')==-1 && img.indexOf('.jpg')==-1 && img.indexOf('jpeg')==-1 && img.indexOf('.gif')==-1)){
-                document.getElementById("note3").style.display="block";
-            }
-            else{
-                document.getElementById("note3").style.display="none";
-                id++;
-                sessionStorage.setItem('id',id);
-                let new_row = 
-                    `<tr id="row">
-                        <td id="cell-id">${id}</td>
-                        <td>
-                            <input type="text" readonly value='${name}' id="cell-name">
-                            <p id="note4">Vui lòng nhập lại</p>
-                        </td>
-                        <td>        
-                            <select id="cell-category">
-                                <option>${category}</option>
-                            </select>
-                            <p id="note5">Vui lòng chọn khóa</p>
-                        </td>
-                        <td>
-                            <img src="${getimg}" id="cell-img">
-                            <input type="file" accept="image/*" id="input-newimage">
-                            <p id="note6">Vui lòng chọn ảnh</p>
-                        </td>
-                        <td id="action">
-                            <button onclick="editRow(event)" class="btn btn-outline-primary" id="button-edit">Edit</button>
-                            <button onclick="deleteRow(event)" class="btn btn-outline-danger" id="button-delete">Delete</button>
-                            <button onclick="saveRow(event)" class="btn btn-outline-success" id="button-save">Save</button>
-                            <button onclick="cancelRow(event)" class="btn btn-outline-secondary" id="button-cancel">Cancel</cancel>
-                        </td>
-                    </tr>`
-                document.querySelector("tbody").innerHTML += new_row;
-                sessionStorage.setItem(id,[name,category,getimg]);
-            }
-        }
+    else 
+        document.getElementById("note1").style.display="block";
+    if (validateCategory(category))
+        document.getElementById("note2").style.display="none";
+    else
+        document.getElementById("note2").style.display="block";
+    if (validateImg(img))
+        document.getElementById("note3").style.display="none";
+    else
+        document.getElementById("note3").style.display="block";
+    
+    if(validateName(name) && validateCategory(category) && validateImg(img)){
+        id++;
+        sessionStorage.setItem('id',id);
+        let new_row = 
+        `<tr id="row">
+            <td id="cell-id">${id}</td>
+            <td>
+                <input type="text" readonly value='${name}' id="cell-name">
+                <p id="note4">Vui lòng nhập lại</p>
+            </td>
+            <td>        
+                <select id="cell-category">
+                    <option>${category}</option>
+                </select>
+                <p id="note5">Vui lòng chọn khóa</p>
+            </td>
+            <td>
+                <img src="${getimg}" id="cell-img">
+                <input type="file" accept="image/*" id="input-newimage">
+                <p id="note6">Vui lòng chọn ảnh</p>
+            </td>
+            <td id="action">
+                <button onclick="editRow(event)" class="btn btn-outline-primary" id="button-edit">Edit</button>
+                <button onclick="deleteRow(event)" class="btn btn-outline-danger" id="button-delete">Delete</button>
+                <button onclick="saveRow(event)" class="btn btn-outline-success" id="button-save">Save</button>
+                <button onclick="cancelRow(event)" class="btn btn-outline-secondary" id="button-cancel">Cancel</cancel>
+            </td>
+        </tr>`
+        document.querySelector("tbody").innerHTML += new_row;
+        sessionStorage.setItem(id,[name,category,getimg]);
     }
 }
 function layDuLieu(){
@@ -109,11 +120,11 @@ function editRow(event){
     
     event.target.parentNode.parentNode.querySelector("#input-newimage").onchange =() =>{
         let img= event.target.parentNode.parentNode.querySelector("#input-newimage").value;
-        if(img==''||(img.indexOf('.png')==-1 && img.indexOf('.jpg')==-1 && img.indexOf('jpeg')==-1 && img.indexOf('.gif')==-1)){
-            document.getElementById("note6").style.display="block";
+        if(validateImg(img)===false){
+            event.target.parentNode.parentNode.querySelector("#note6").style.display="block";
         }
         else{
-            document.getElementById("note6").style.display="none";
+            event.target.parentNode.parentNode.querySelector("#note6").style.display="none";
             let files = event.target.parentNode.parentNode.querySelector("#input-newimage").files;
             let blob = URL.createObjectURL(files[0]);
             event.target.parentNode.parentNode.querySelector("#cell-img").src = blob;
@@ -130,28 +141,24 @@ function saveRow(event){
     name=name.trim();
     let category = event.target.parentNode.parentNode.querySelector("#cell-category").value;
     let getimg = event.target.parentNode.parentNode.querySelector("#cell-img").src;
-    if (name==''||name.length>10||(name.charCodeAt(0)>=48 && name.charCodeAt(0)<=57)){
-        document.getElementById("note4").style.display="block";
-        document.getElementById("note5").style.display="none";
-        document.getElementById("note6").style.display="none";
-    }
-    else{
-        document.getElementById("note4").style.display="none";
-        if(category=='Chọn khóa'){
-            document.getElementById("note5").style.display="block";
-        }
-        else{   
-            document.getElementById("note5").style.display="none"; 
-            sessionStorage.setItem(id2,[name,category,getimg]);
-            event.target.parentNode.parentNode.querySelector("input").readOnly = true;
-            event.target.parentNode.parentNode.querySelector("#cell-category").innerHTML=`<option>${category}</option>`;
-            event.target.parentNode.parentNode.querySelector("#cell-name").style.border="none";
-            event.target.parentNode.parentNode.querySelector("#input-newimage").style.display="none";
-            event.target.parentNode.parentNode.querySelector("#button-edit").style.display="inline-block";
-            event.target.parentNode.parentNode.querySelector("#button-delete").style.display="inline-block";
-            event.target.parentNode.parentNode.querySelector("#button-save").style.display="none";
-            event.target.parentNode.parentNode.querySelector("#button-cancel").style.display="none";
-        }
+    if(validateName(name))
+        event.target.parentNode.parentNode.querySelector("#note4").style.display="none";
+    else    
+        event.target.parentNode.parentNode.querySelector("#note4").style.display="block";
+    if(validateCategory(category))
+        event.target.parentNode.parentNode.querySelector("#note5").style.display="none";
+    else
+        event.target.parentNode.parentNode.querySelector("#note5").style.display="block";
+    if (validateName(name) && validateCategory(category) && event.target.parentNode.parentNode.querySelector("#note6").style.display==="none"){ 
+        sessionStorage.setItem(id2,[name,category,getimg]);
+        event.target.parentNode.parentNode.querySelector("input").readOnly = true;
+        event.target.parentNode.parentNode.querySelector("#cell-category").innerHTML=`<option>${category}</option>`;
+        event.target.parentNode.parentNode.querySelector("#cell-name").style.border="none";
+        event.target.parentNode.parentNode.querySelector("#input-newimage").style.display="none";
+        event.target.parentNode.parentNode.querySelector("#button-edit").style.display="inline-block";
+        event.target.parentNode.parentNode.querySelector("#button-delete").style.display="inline-block";
+        event.target.parentNode.parentNode.querySelector("#button-save").style.display="none";
+        event.target.parentNode.parentNode.querySelector("#button-cancel").style.display="none";
     }
 }
 function deleteRow(event){
@@ -180,6 +187,9 @@ function cancelRow(event){
     event.target.parentNode.parentNode.querySelector("#button-delete").style.display="inline-block";
     event.target.parentNode.parentNode.querySelector("#button-save").style.display="none";
     event.target.parentNode.parentNode.querySelector("#button-cancel").style.display="none";
+    event.target.parentNode.parentNode.querySelector("#note4").style.display="none";
+    event.target.parentNode.parentNode.querySelector("#note5").style.display="none";
+    event.target.parentNode.parentNode.querySelector("#note6").style.display="none";
 }
  document.querySelector("#input-image").onchange = preview_image;
  document.querySelector("#form").onsubmit = themDuLieu;

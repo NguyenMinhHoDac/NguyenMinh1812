@@ -17,6 +17,7 @@ body{
     margin-top: 50px;
     border: solid 1px;
     background-color: white;
+    position: relative;
 }
     #form>h1{
         text-align: center;
@@ -37,8 +38,8 @@ body{
         font-size: 15px;
         position: absolute;
         font-style: italic;
-        top: 40%;
-        left: 38%;
+        top: 48%;
+        left: 30%;
         display: none;
     }
     #name{
@@ -53,8 +54,8 @@ body{
         font-size: 15px;
         position: absolute;
         font-style: italic;
-        top: 50%;
-        left: 32%;
+        top: 65%;
+        left: 20%;
         display: none;
     }
     #input-image{
@@ -66,8 +67,8 @@ body{
         font-size: 15px;
         position: absolute;
         font-style: italic;
-        top: 50%;
-        left: 47%;
+        top: 65%;
+        left: 45%;
         display: none;
     }
     #preview-image{
@@ -77,7 +78,7 @@ body{
     }
     #button{
         position: absolute;
-        top: 60%;
+        top: 75%;
         right: 40%;
     }
 .table{
