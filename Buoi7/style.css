@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    text-align: center;
+}
+.head{
+    height: 50px;
+    border-bottom: solid 0.5px lightgray;
+}
+img{
+    width: 22%;
+    border-radius: 50%;
+    margin-top: 75px;
+}
+h1{
+    font-size: 180px;
+    font-family:;
+}
+.text1{
+    position: absolute;
+    top: 180px;
+    left: 43%;
+    color: white;
+}
+.text2{
+    position: absolute;
+    top: 190px;
+    left: 42.5%;
+}
+.blog{
+    width: 18%;
+    height: 150px;
+    display: inline-block;
+    margin-right: 10px;
+}
+    #blog1{
+        background-image: url(https://themes.pixelwars.org/impose/wp-content/uploads/2015/11/000-1024x1024.jpg);
+        background-size: cover;
+    }
+    #blog2{
+        background-image: url(https://themes.pixelwars.org/impose/wp-content/uploads/2015/11/05-1-683x1024.jpg);
+        background-size: cover;
+    }
+    #blog3{
+        background-image: url(https://themes.pixelwars.org/impose/wp-content/uploads/2015/11/02-2-683x1024.jpg);
+        background-size: cover;
+    }
