@@ -2,45 +2,397 @@ body{
     margin: 0;
     text-align: center;
 }
-.head{
-    height: 50px;
-    border-bottom: solid 0.5px lightgray;
-}
-img{
-    width: 22%;
-    border-radius: 50%;
-    margin-top: 75px;
-}
-h1{
-    font-size: 180px;
-    font-family:;
-}
-.text1{
-    position: absolute;
-    top: 180px;
-    left: 43%;
-    color: white;
-}
-.text2{
-    position: absolute;
-    top: 190px;
-    left: 42.5%;
-}
-.blog{
-    width: 18%;
-    height: 150px;
-    display: inline-block;
-    margin-right: 10px;
-}
-    #blog1{
-        background-image: url(https://themes.pixelwars.org/impose/wp-content/uploads/2015/11/000-1024x1024.jpg);
-        background-size: cover;
+@media(min-width: 1025px) {
+    .head{
+        height: 50px;
+        width: 100%;
+        border-bottom: solid 0.5px lightgray;
+        position: fixed;
+        top: 0;
+        background-color: white;
+        z-index: 2;
+        display: flex;
     }
-    #blog2{
-        background-image: url(https://themes.pixelwars.org/impose/wp-content/uploads/2015/11/05-1-683x1024.jpg);
-        background-size: cover;
+        .head>img{
+            width: 18%;
+            left: 15%;
+            top: -65px;
+            position: absolute;
+        }
+        #icon3{
+            display: none;
+        }
+        #menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            width: 24%;
+            height: 50px;
+            margin-left: 39%;
+        }
+            #menu>a{
+                text-decoration: none;
+                color: rgb(41, 41, 41);
+                font-family: 'Noto Sans', sans-serif;
+                font-size: 10px;
+                margin-right: 10px;
+                font-weight: bold;
+            }
+        #icon{
+            color: rgba(122, 122, 122, 0.603);
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            height: 50px;
+            width: 80px;
+            justify-content: space-between;
+            margin-left: 15%;
+        }
+        #icon2{
+            display: flex;
+            align-items: center;
+            height: 50px;
+            margin-left: 3%;
+            font-size: 13px;
+        }
+    .block1{
+        position: relative;
+        z-index: -1;
+        margin-top: 50px;
     }
-    #blog3{
-        background-image: url(https://themes.pixelwars.org/impose/wp-content/uploads/2015/11/02-2-683x1024.jpg);
-        background-size: cover;
+        img{
+            width: 280px;
+            border-radius: 50%;
+            margin-top: 75px;
+            margin-bottom: 0;
+        }
+        h1{
+            font-size: 180px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .text1{
+            margin-top: -105px;
+            margin-left: 75px;
+            color:white;
+        }
+        .text2{
+            margin-top: -380px;
+            margin-left: 65px;
+        }
+        .block1-text{
+            margin-top: -150px;
+        }
+            .text3{
+                font-family: 'Poppins';
+                font-size: 50px;
+                margin-top: 0;
+                line-height: 10px;
+            }
+    .block2{
+        margin-top: 80px;
+    }    
+        .blog{
+            width: 20vw;
+            height: 8vw;
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: none;
+            color: white;
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            padding: auto;
+            padding-top: 80px;
+            filter: grayscale(20%)  saturate(100%);
+        }
+            #blog1{
+                background-image: url(https://themes.pixelwars.org/impose/wp-content/uploads/2015/11/000-1024x1024.jpg);
+                background-size: cover;
+            }
+            #blog2{
+                background-image: url(https://themes.pixelwars.org/impose/wp-content/uploads/2015/11/05-1-683x1024.jpg);
+                background-size: cover;
+            }
+            #blog3{
+                background-image: url(https://themes.pixelwars.org/impose/wp-content/uploads/2015/11/02-2-683x1024.jpg);
+                background-size: cover;
+            }
+            #blog4{
+                background-image: url(https://themes.pixelwars.org/impose/wp-content/uploads/2015/11/aa-1024x802.jpg);
+                background-size: cover;
+            }
+    .text4{
+        color: rgb(167, 167, 167);
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 12px;
+        margin-top: 80px;
     }
+}
+@media(max-width: 1024px) {
+    .head{
+        height: 50px;
+        width: 100%;
+        border-bottom: solid 0.5px lightgray;
+        position: ;
+        top: 0;
+        background-color: white;
+        z-index: 2;
+        display: flex;
+    }
+        #icon3{
+            display: flex;
+            align-items: center;
+            height: 50px;
+            margin-left: 8%;
+            font-size: 20px;
+        }
+        .head>img{
+            position: absolute;
+            height: 35px;
+            width: 140px;
+            left: 11%;
+            top: -65px;
+        }
+        #menu{
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            width: 24%;
+            height: 50px;
+            margin-left: 39%;
+        }
+            #menu>a{
+                text-decoration: none;
+                color: rgb(41, 41, 41);
+                font-family: 'Noto Sans', sans-serif;
+                font-size: 10px;
+                margin-right: 10px;
+                font-weight: bold;
+            }
+        #icon{
+            color: rgba(122, 122, 122, 0.603);
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            height: 50px;
+            width: 80px;
+            justify-content: space-between;
+            margin-left: 75%;
+        }
+        #icon2{
+            display: none;
+            align-items: center;
+            height: 50px;
+            margin-left: 3%;
+            font-size: 13px;
+        }
+    .block1{
+        position: relative;
+        z-index: -1;
+        margin-top: ;
+    }
+        img{
+            width: 280px;
+            border-radius: 50%;
+            margin-top: 75px;
+            margin-bottom: 0;
+        }
+        h1{
+            font-size: 180px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .text1{
+            margin-top: -105px;
+            margin-left: 75px;
+            color:white;
+        }
+        .text2{
+            margin-top: -380px;
+            margin-left: 65px;
+        }
+        .block1-text{
+            margin-top: -150px;
+        }
+            .text3{
+                font-family: 'Poppins';
+                font-size: 50px;
+                margin-top: 0;
+                line-height: 10px;
+            }
+    .block2{
+        margin-top: 80px;
+    }    
+        .blog{
+            width: 20vw;
+            height: 8vw;
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: none;
+            color: white;
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            padding: auto;
+            padding-top: 80px;
+            filter: grayscale(20%)  saturate(100%);
+        }
+            #blog1{
+                background-image: url(https://themes.pixelwars.org/impose/wp-content/uploads/2015/11/000-1024x1024.jpg);
+                background-size: cover;
+            }
+            #blog2{
+                background-image: url(https://themes.pixelwars.org/impose/wp-content/uploads/2015/11/05-1-683x1024.jpg);
+                background-size: cover;
+            }
+            #blog3{
+                background-image: url(https://themes.pixelwars.org/impose/wp-content/uploads/2015/11/02-2-683x1024.jpg);
+                background-size: cover;
+            }
+            #blog4{
+                background-image: url(https://themes.pixelwars.org/impose/wp-content/uploads/2015/11/aa-1024x802.jpg);
+                background-size: cover;
+            }
+    .text4{
+        color: rgb(167, 167, 167);
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 12px;
+        margin-top: 80px;
+    }
+}
+@media(max-width: 768px) {
+    .head{
+        height: 50px;
+        width: 100%;
+        border-bottom: solid 0.5px lightgray;
+        position: ;
+        top: 0;
+        background-color: white;
+        z-index: 2;
+        display: flex;
+    }
+        #icon3{
+            display: flex;
+            align-items: center;
+            height: 50px;
+            margin-left: 8%;
+            font-size: 20px;
+        }
+        .head>img{
+            position: absolute;
+            height: 35px;
+            width: 140px;
+            left: 11%;
+            top: -65px;
+        }
+        #menu{
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            width: 24%;
+            height: 50px;
+            margin-left: 39%;
+        }
+            #menu>a{
+                text-decoration: none;
+                color: rgb(41, 41, 41);
+                font-family: 'Noto Sans', sans-serif;
+                font-size: 10px;
+                margin-right: 10px;
+                font-weight: bold;
+            }
+        #icon{
+            color: rgba(122, 122, 122, 0.603);
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            height: 50px;
+            width: 80px;
+            justify-content: space-between;
+            margin-left: 75%;
+        }
+        #icon2{
+            display: none;
+            align-items: center;
+            height: 50px;
+            margin-left: 3%;
+            font-size: 13px;
+        }
+    .block1{
+        position: relative;
+        z-index: -1;
+        margin-top: ;
+        text-align: center;
+    }
+        img{
+            width: 36vw;
+            border-radius: 50%;
+            margin-top: 75px;
+            margin-bottom: 0;
+        }
+        h1{
+            font-size: 50px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .text1{
+            margin-top: -40px;
+            margin-left: 10px;
+            color:white;
+        }
+        .text2{
+            margin-top: -105px;
+            margin-left: 5px;
+        }
+        .block1-text{
+            margin-top: -5vw;
+        }
+            .text3{
+                font-family: 'Poppins';
+                font-size: 25px;
+                margin-top: 0;
+                line-height: 10px;
+            }
+    .block2{
+        margin-top: 80px;
+    }    
+        .blog{
+            width: 40vw;
+            height: 16vw;
+            display: inline-block;
+            margin-right: 15px;
+            text-decoration: none;
+            color: white;
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            padding: auto;
+            padding-top: 80px;
+            filter: grayscale(20%)  saturate(100%);
+            margin-top: 15px;
+        }
+            #blog1{
+                background-image: url(https://themes.pixelwars.org/impose/wp-content/uploads/2015/11/000-1024x1024.jpg);
+                background-size: cover;
+            }
+            #blog2{
+                background-image: url(https://themes.pixelwars.org/impose/wp-content/uploads/2015/11/05-1-683x1024.jpg);
+                background-size: cover;
+            }
+            #blog3{
+                background-image: url(https://themes.pixelwars.org/impose/wp-content/uploads/2015/11/02-2-683x1024.jpg);
+                background-size: cover;
+            }
+            #blog4{
+                background-image: url(https://themes.pixelwars.org/impose/wp-content/uploads/2015/11/aa-1024x802.jpg);
+                background-size: cover;
+            }
+    .text4{
+        color: rgb(167, 167, 167);
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 12px;
+        margin-top: 80px;
+    }
+}
+@media(max-width: 768px) {}
