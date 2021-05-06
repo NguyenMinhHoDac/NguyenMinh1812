@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/219/847/609/fantasy-art-underwater-sea-scifi-wallpaper-preview.jpg);
+    background-size: cover;
+}
+img{
+    object-fit: cover;
+    animation: run 7s ease-in-out forwards infinite;
+    position: absolute;
+    border-radius: 50%;
+    filter:opacity(50%);
+}
+img:nth-child(1){
+    left: 75%;
+    width: 1vw;
+    height: 1vw;
+}
+img:nth-child(2){
+    left: 15%;
+    width: 3vw;
+    height: 3vw;
+    animation-delay: 1.5s;
+}
+img:nth-child(3){
+    left: 35%;
+    width: 4vw;
+    height: 4vw;
+    animation-delay: 0.5s;
+}
+img:nth-child(4){
+    left: 55%;
+    width: 5vw;
+    height: 5vw;
+    animation-delay: 2s;
+}
+img:nth-child(5){
+    left: 85%;
+    width: 2.5vw;
+    height: 2.5vw;
+    animation-delay: 2s;
+}
+@keyframes run{
+    from{bottom: -10%;}
+    to{bottom:60%;}
+}
