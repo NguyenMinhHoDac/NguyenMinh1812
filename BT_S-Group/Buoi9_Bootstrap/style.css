@@ -1,0 +1,18 @@
+.block1{
+    background-image: url(https://jevelin.shufflehound.com/personal-blog/wp-content/uploads/sites/28/2019/09/bg1.jpg) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vw;
+    margin: 0 !important;
+}
+.fa-search{
+    color: gray;
+}
+.card{
+    margin: auto !important;
+}
+.col-md-6>img{
+    height: 20vw;
+    object-fit: cover !important;
+}
+
