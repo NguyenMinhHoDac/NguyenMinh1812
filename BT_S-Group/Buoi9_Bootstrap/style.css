@@ -37,6 +37,12 @@ body{
 .btn-secondary:hover{
     background-color: rgb(23, 124, 255) !important;
 }
+.breadcrumb-item>a{
+    text-decoration: none;
+}
+.card-title>a{
+    text-decoration: none;
+}
 @media (max-width: 1000px){
     .block1>h1{
         font-size: 40px;
