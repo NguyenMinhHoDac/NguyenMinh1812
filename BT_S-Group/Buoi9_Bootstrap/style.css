@@ -1,3 +1,6 @@
+body{
+    margin: 0 !important;
+}
 .block1{
     background-image: url(https://jevelin.shufflehound.com/personal-blog/wp-content/uploads/sites/28/2019/09/bg1.jpg) !important;
     background-size: cover;
@@ -15,4 +18,46 @@
     height: 20vw;
     object-fit: cover !important;
 }
-
+.page-link{
+    box-shadow: none !important;
+}
+.page-link:hover{
+    background-color: white !important;
+    color: rgb(23, 124, 255) !important;
+}
+.btn-close{
+    box-shadow: none !important;
+}
+.navbar-toggler{
+    box-shadow: none !important;
+}
+.btn-secondary{
+    background-color: rgb(53, 53, 53) !important;
+}
+.btn-secondary:hover{
+    background-color: rgb(23, 124, 255) !important;
+}
+@media (max-width: 1000px){
+    .block1>h1{
+        font-size: 40px;
+    }
+}
+@media (max-width: 768px){
+    .head{
+        font-size: 20px;
+    }
+    .block1>h1{
+        font-size: 30px;
+    }
+    .block1{
+        height: 50vw;
+    }
+    .form1{
+        width: 75% !important;
+    }
+}
+@media (min-width:768px) {
+    .form1{
+        width: 50% !important;
+    }
+}
