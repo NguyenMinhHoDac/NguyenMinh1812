@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{   
     margin: 0;
 }
@@ -10,7 +13,6 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #030507 !important;
         position: fixed;
     }
         .bg{
@@ -113,16 +115,19 @@ body{
                 font-weight: bold;
                 letter-spacing: 0.8px;
             }
-            .button1{
+            #button1{
                 font-size: 14px;
                 color: #232527;
+                background-color: white;
                 line-height: 28px;
                 padding: 7px 22px;
                 margin-right: 16px;
                 border: solid 1px white;
                 letter-spacing: 0.8px;
+                display: inline-block;
+                text-decoration: none;
             }
-            .button2{
+            #button2{
                 font-size: 14px;
                 line-height: 28px;
                 padding: 7px 22px;
@@ -131,8 +136,10 @@ body{
                 color: white;
                 border: solid 1px white;
                 letter-spacing: 0.8px;
+                display: inline-block;
+                text-decoration: none;
             }
-            .button2:hover{
+            #button2:hover{
                 color: #232527;
                 background-color: white;
                 border: solid 1px white;
@@ -147,17 +154,97 @@ body{
             right: 35px;
             z-index: 2;
         }
-    .blockbody{
+    #blockbody{
         width: 50%;
         position: absolute;
         right: 0;
         top: 0;
         background-color: white;
         z-index: 3;
+        color: #232527;
+        display: none;
     }
+        #button3{
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.9);
+            position: fixed;
+            top: 25px;
+            right: 25px;
+            border: none;
+            color: white;
+            font-size: 14px;
+            line-height: 50px;
+            text-align: center;
+            font-family:'Open Sans', sans-serif;
+        }
+        #button3:hover{
+            color: #3c55e6;
+            transition: 0.5s;
+        }
+        .title{
+            font-family: 'Montserrat', sans-serif;  
+            font-size: 32px;
+            font-weight: 300;
+            line-height: 48px;  
+            margin: 0 50px;
+            margin-bottom: 24px;
+        }
+        .text1{
+            font-family:'Open Sans', sans-serif;
+            font-size: 14px;
+            line-height: 28px;
+            margin: 0 50px;
+            font-weight: 400;
+        }
+        #name{
+            height: 356px;
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
         .work{
             background-color: #f7f7f7;
+            height: 772px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
+            .work>h1{
+                margin-top: 80px;
+            }
+            .work>p{
+                margin-bottom: 48px;
+            }
+            table{
+                margin: 0 50px;
+                margin-bottom: 0;
+                color: #232527;
+            }
+                tr{
+                    height: 148px;
+                    margin: 0;
+                }
+                td{
+                    display: inline-block;
+                    width: 50%;
+                    padding: 0;
+                }
+                    .icon2{
+                        font-size: 44px;
+                        line-height: 44px;
+                        margin-top: 0;
+                        margin-bottom: 30px;
+                    }
+                    td>h2{
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 20px;
+                        line-height: 30px;
+                        font-weight: 400;
+                        margin-top: 0;
+                        margin-bottom: 44px;
+                    }
 
 @media (max-width: 1200px) {
     .nav1{
@@ -170,6 +257,19 @@ body{
     .nav2{
         display: none;
     }
+    .home{
+        position: relative;
+    }
+        .note{
+            display: none;
+        }
+    #blockbody{
+        position: relative;
+        width: 100%;
+    }
+        #name{
+            margin-top: 0;
+        }
 }
 
 @media (max-width: 768px) {
@@ -182,7 +282,7 @@ body{
         .info{
             margin-top: 50px;
         }
-            .button1{
+            #button1{
                 margin-right:0;
             }
 }
@@ -198,11 +298,11 @@ body{
             width: 90%;
             margin-top: 20px;
         }
-        .button1{
+        #button1{
             width: 100%;
             display: block;
         }
-        .button2{
+        #button2{
             width: 100%;
             display: block;
             margin-top: 20px;

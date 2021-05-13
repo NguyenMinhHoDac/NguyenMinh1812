@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/deb4e62b44.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="home">
-        <div class="nav1">
+    <div class="nav1">
             <img src="https://preview.erilisdesign.com/html/petri/assets/images/logo.png" alt="">
             <button class="bar">
                 <span></span>
@@ -20,69 +20,71 @@
                 <span></span>
             </button>
         </div>
-        <div class="nav2">
+    <div class="nav2">
             <div class="icon">
                 <i class="fab fa-facebook-f"></i>
                 <i class="fab fa-twitter"></i>
                 <i class="fab fa-instagram"></i>
                 <i class="fab fa-pinterest"></i>
             </div>
-        </div>
+    </div>    
+    <div class="home">
         <div class="info">
             <h1>JAMES COOK</h1>
             <p>Creative UI Designer</p>
-            <button class="button1" type="button">Learn more</button>
-            <button class="button2">Portfolio</button>
+            <a id="button1" href="#name">Learn more</a>
+            <a id="button2" href="#portfolio">Portfolio</a>
         </div>
         <p class="note">© 2018 Petri - All Rights Reserved</p>
         <div class="bg"></div>
     </div>
-    <div class="blockbody">
-        <div class="name">
-            <h1>About Me</h1>
-            <p>Mauris ut sem elementum, tristique velit sed, volutpat mauris. Ut interdum nibh sit amet imperdiet condimentum. Nulla sed tellus placerat, vehicula risus ac, sollicitudin quam. Quisque pharetra porta libero, a sagittis nisl tristique non. Etiam sapien purus, cursus eu pulvinar et, tempor sit amet ipsum. Sed a nisl sit amet lorem dictum hendrerit.</p>
+    <div id="blockbody">
+        <button id="button3"><i class="fas fa-times"></i></button>
+        <div id="name">
+            <h1 class="title">About Me</h1>
+            <p class="text1">Mauris ut sem elementum, tristique velit sed, volutpat mauris. Ut interdum nibh sit amet imperdiet condimentum. Nulla sed tellus placerat, vehicula risus ac, sollicitudin quam. Quisque pharetra porta libero, a sagittis nisl tristique non. Etiam sapien purus, cursus eu pulvinar et, tempor sit amet ipsum. Sed a nisl sit amet lorem dictum hendrerit.</p>
         </div>
         <div class="work">
-            <h1>What I Do</h1>
-            <p>Fusce massa dolor, mattis sed ultrices ut, placerat ut leo. Donec sed fringilla lectus, non vulputate orci. Integer id libero euismod, interdum ligula vel, porttitor magna. Sed euismod maximus finibus. Pellentesque tempus ultricies nisi at cursus. Nulla at nisi tellus. Suspendisse potenti.</p>
+            <h1 class="title">What I Do</h1>
+            <p class="text1">Fusce massa dolor, mattis sed ultrices ut, placerat ut leo. Donec sed fringilla lectus, non vulputate orci. Integer id libero euismod, interdum ligula vel, porttitor magna. Sed euismod maximus finibus. Pellentesque tempus ultricies nisi at cursus. Nulla at nisi tellus. Suspendisse potenti.</p>
             <table>
                 <tbody>
                     <tr>
                         <td>
-                            <i class="fas fa-stopwatch"></i>
+                            <i class="icon2 fas fa-stopwatch"></i>
                             <h2>Launch Quickly</h2>
                         </td>
                         <td>
-                            <i class="fas fa-brush"></i>
+                            <i class="icon2 fas fa-brush"></i>
                             <h2>Stylish Design</h2>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <i class="fas fa-book-open"></i>
+                            <i class="icon2 fas fa-book-open"></i>
                             <h2>Well Documented</h2>
                         </td>
                         <td>
-                            <i class="fas fa-stopwatch"></i>
+                            <i class="icon2 fas fa-layer-group"></i>
                             <h2>Multiple Styles</h2>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <i class="fas fa-cog"></i>
+                            <i class="icon2 fas fa-cog"></i>
                             <h2>Fully Customizable</h2>
                         </td>
                         <td>
-                            <i class="fas fa-headphones"></i>
+                            <i class="icon2 fas fa-headphones"></i>
                             <h2>Friendly Support</h2>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <div class="portfolio">
-            <h1>Portfolio</h1>
-            <p>Donec sollicitudin libero vitae massa placerat tempor. Duis rutrum nisl eu ipsum varius, nec feugiat tortor vulputate. Integer pellentesque leo id metus dictum, a tristique tellus faucibus.</p>
+        <div id="portfolio">
+            <h1 class="title">Portfolio</h1>
+            <p class="text1">Donec sollicitudin libero vitae massa placerat tempor. Duis rutrum nisl eu ipsum varius, nec feugiat tortor vulputate. Integer pellentesque leo id metus dictum, a tristique tellus faucibus.</p>
             <div>
                 <button>ALL</button>
                 <button>WED</button>
@@ -91,8 +93,8 @@
             </div>
         </div>
         <div class="contact">
-            <h1>Contact</h1>
-            <p>Want to say hello? Want to know more about us? Give us a call or drop us an email and we will get back to you as soon as we can.</p>
+            <h1 class="title">Contact</h1>
+            <p class="text2">Want to say hello? Want to know more about us? Give us a call or drop us an email and we will get back to you as soon as we can.</p>
             <table>
                 <tr>
                     <td>
