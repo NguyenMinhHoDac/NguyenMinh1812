@@ -217,8 +217,8 @@ body{
             .work>p{
                 margin-bottom: 48px;
             }
-            table{
-                margin: 0 50px;
+            #table1{
+                margin: 0 48px;
                 margin-bottom: 0;
                 color: #232527;
             }
@@ -245,6 +245,57 @@ body{
                         margin-top: 0;
                         margin-bottom: 44px;
                     }
+        #portfolio>p{
+            margin-bottom: 48px;
+        }
+        #p-button{
+            margin: 0 50px;
+        }
+        .button4{
+            border: none;
+            border-bottom: solid 1px;
+            text-align: left;
+            background-color: transparent;
+            padding-left: 0;
+            padding-right: 27px;
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 28px;
+            letter-spacing: 3px;
+            margin-right: 27px;
+        }
+        #contact{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+            #text2{
+                font-family:'Open Sans', sans-serif;
+                font-size: 14px;
+                line-height: 28px;
+                margin: 0 50px 46px 50px;
+                font-weight: 400;
+                width: 62%;
+            }
+            #table2{
+                margin: 0 33px;
+                margin-bottom: 48px;
+                color: #232527;
+            }
+            .cell2{
+                width: 33.333%;
+                margin: 0;
+                padding: 0 15px;
+                height: 154px;
+                box-sizing: border-box;
+            }
+                .cell2>p{
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 14px;
+                    line-height: 28px;
+                    font-weight: 400;
+                    margin-top: 0;
+                }
 
 @media (max-width: 1200px) {
     .nav1{
