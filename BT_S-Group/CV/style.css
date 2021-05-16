@@ -416,6 +416,9 @@ body{
 }
 
 @media (max-width: 470px) {
+    .container{
+        max-width: 580px;
+    }
     .home{
         height: 480px;
     }
