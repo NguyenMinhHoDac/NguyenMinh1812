@@ -184,6 +184,7 @@ body{
         }
         .container{
             margin: 0 50px;
+            width: 85%;
         }
         .title{
             font-family: 'Montserrat', sans-serif;  
