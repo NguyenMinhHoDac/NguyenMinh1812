@@ -10,7 +10,7 @@ body{
         z-index: 4;
         width: 100%;
         height: 100%;
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
     }
@@ -21,7 +21,6 @@ body{
             justify-content: center;
             align-items: center;
         }
-
         #tab>a{
             text-decoration: none;
             color: white;
@@ -33,6 +32,19 @@ body{
             width: 100%;
             text-align: center;
         }
+        .hide {
+            opacity: 0;
+            transition: all 0.5s ease-out;
+        }
+        .move1 {
+            transform: translateY(-40px);
+            transition: all 0.5s ease-out;
+        }
+        .open{
+            opacity: 1;
+            transition: all 0.5s ease-out;
+        }
+
     .home{
         background-image: url(https://preview.erilisdesign.com/html/petri/demo/images/image-2.jpg);
         background-size: cover;
@@ -70,7 +82,7 @@ body{
                 position: absolute;
                 left: 200px;
             }
-            .bar{
+            #bar{
                 width: 37px;
                 height: 44px;
                 position: absolute;
@@ -78,25 +90,25 @@ body{
                 background-color: transparent;
                 border: none;
             }
-            .bar>span{
+            #bar>span{
                 display: block;
                 position: absolute;
                 right: 0;
                 margin: 0;
             }
-                .bar>span:nth-child(1){
+                #bar>span:nth-child(1){
                     height: 2px;
                     top: 25%;
                     width: 100%;
                     border-top: solid 2px white;
                 }
-                .bar>span:nth-child(2){
+                #bar>span:nth-child(2){
                     height: 2px;
                     width: 70%;
                     top: 45%;
                     border-top: solid 2px white;
                 }
-                .bar>span:nth-child(3){
+                #bar>span:nth-child(3){
                     height: 2px;
                     top: 60%;
                     width: 50%;
@@ -411,6 +423,9 @@ body{
         display: block;
         width: 100%;
     }
+        #button3{
+            display: none;
+        }
         #name{
             margin-top: 0;
         }
