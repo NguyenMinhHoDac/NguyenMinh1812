@@ -11,6 +11,7 @@ document.getElementById('button2').onclick = () => {
   }
 
 function hideMenu() {
+    document.getElementById("menu").classList.remove("open");
     document.getElementById("tab").classList.add("move1");
     document.getElementById("menu").classList.add("hide");
     document.getElementById('blockbody').style.display="block";
@@ -18,9 +19,11 @@ function hideMenu() {
 }
 
 function openMenu() {
-  document.getElementById('menu').style.display="flex";
   document.getElementById("menu").classList.remove("hide");
   document.getElementById("tab").classList.remove("move1");
+  document.getElementById('menu').style.display="flex";
+  document.getElementById('menu').style.opacity="none";
+  setTimeout(function(){document.getElementById("menu").classList.add("open")},50);
 }
 
 document.getElementById("bar").onclick = () =>{
