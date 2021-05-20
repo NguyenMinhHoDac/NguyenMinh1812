@@ -5,6 +5,9 @@ body{
     margin: 0;
     position: relative;
 }
+    button{
+        cursor: pointer;
+    }
     #menu{
         background-color: #000000e0;
         position: fixed;
@@ -200,6 +203,16 @@ body{
             right: 35px;
             z-index: 2;
         }
+    #blockbody:before{
+        content: '';
+        position: absolute;
+        background-color: black;
+        top: 0;
+        right: 100%;
+        width: 200%;
+        height: 100%;
+        opacity: 0.7;
+    }    
     #blockbody{
         width: 50vw;
         position: absolute;
@@ -209,12 +222,23 @@ body{
         z-index: 3;
         color: #232527;
         display: none;
+        animation: showb 1s ease-in-out;
+        animation-play-state: running;
+    }
+    @keyframes showb{
+        from {right: -50%;}
+        to {right: 0;}
+    }
+    @keyframes hide{
+        from {right: 0;}
+        to {right: -50%;}
     }
         #button3{
             width: 50px;
             height: 50px;
             background-color: rgba(0, 0, 0, 0.9);
             position: fixed;
+            z-index: 20;
             top: 25px;
             right: 25px;
             border: none;
@@ -223,8 +247,47 @@ body{
             line-height: 50px;
             text-align: center;
             font-family:'Open Sans', sans-serif;
+            animation: showb3 0.7s ease-in-out;
+            animation-play-state: running;
+        }
+        @keyframes showb3{
+            from {top: -100px;}
+            to {top: 25px;}
+        }
+        @keyframes hideb3{
+            from {top: 25px;}
+            to {top: -100px;}
         }
         #button3:hover{
+            color: #3c55e6;
+            transition: 0.5s;
+        }
+        #button6{
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.9);
+            position: fixed;
+            z-index: 20;
+            bottom: 25px;
+            right: 25px;
+            border: none;
+            color: white;
+            font-size: 14px;
+            line-height: 50px;
+            text-align: center;
+            font-family:'Open Sans', sans-serif;
+            animation: showb6 0.7s ease-in-out;
+            animation-play-state: running;
+        }
+        @keyframes showb6{
+            from {bottom: -100px;}
+            to {bottom: 25px;}
+        }
+        @keyframes hideb6{
+            from {bottom: 25px;}
+            to {bottom: -100px;}
+        }
+        #button6:hover{
             color: #3c55e6;
             transition: 0.5s;
         }
@@ -517,6 +580,9 @@ body{
         width: 100%;
     }
         #button3{
+            display: none;
+        }
+        #button6{
             display: none;
         }
         #name{
