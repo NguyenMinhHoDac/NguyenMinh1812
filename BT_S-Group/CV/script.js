@@ -2,7 +2,8 @@ document.getElementById('button3').onclick = () => {
     document.getElementById('blockbody').style.animationName="hide";
     document.getElementById('button3').style.animationName="hideb3";
     document.getElementById('button6').style.animationName="hideb6";
-    setTimeout(function(){document.getElementById('blockbody').style.display="none";},1000);
+    document.getElementById('blockbody-bg').style.animationName="hidebg";
+    setTimeout(function(){document.getElementById('blockbody-bg').style.display="none";document.getElementById('blockbody').style.display=""},500);
   }
 
 document.getElementById('button1').onclick = () => {
@@ -10,6 +11,8 @@ document.getElementById('button1').onclick = () => {
     document.getElementById('button3').style.animationName="showb3";
     document.getElementById('button6').style.animationName="showb6";
     document.getElementById('blockbody').style.display="block";
+    document.getElementById('blockbody-bg').style.display="block";
+    document.getElementById('blockbody-bg').style.animationName="showbg";
   }
 
 document.getElementById('button2').onclick = () => {
@@ -17,6 +20,8 @@ document.getElementById('button2').onclick = () => {
     document.getElementById('button3').style.animationName="showb3";
     document.getElementById('button6').style.animationName="showb6";
     document.getElementById('blockbody').style.display="block";
+    document.getElementById('blockbody-bg').style.display="block";
+    document.getElementById('blockbody-bg').style.animationName="showbg";
   }
 
 function hideMenu() {

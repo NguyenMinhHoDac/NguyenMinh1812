@@ -4,6 +4,8 @@ html{
 body{   
     margin: 0;
     position: relative;
+    overflow-x: hidden;
+    width: 100%;
 }
     button{
         cursor: pointer;
@@ -57,7 +59,7 @@ body{
         background-image: url(https://preview.erilisdesign.com/html/petri/demo/images/image-2.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -67,7 +69,7 @@ body{
         .bg{
             background-color: #030507;
             opacity: 0.4;
-            width: 100%;
+            width: 100vw;
             height: 100%;
             position: absolute;
             z-index: 1;
@@ -203,16 +205,27 @@ body{
             right: 35px;
             z-index: 2;
         }
-    #blockbody:before{
+    #blockbody-bg{
         content: '';
-        position: absolute;
+        position: fixed;
         background-color: black;
         top: 0;
-        right: 100%;
-        width: 200%;
-        height: 100%;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
         opacity: 0.7;
+        display: none;
+        animation: showbg 0.7s ease-in-out forwards;
+        animation-play-state: running;
     }    
+    @keyframes showbg{
+        from {opacity: 0;}
+        to {opacity: 0.7;}
+    }
+    @keyframes hidebg{
+        from {opacity: 0.7;}
+        to {opacity: 0;}
+    }
     #blockbody{
         width: 50vw;
         position: absolute;
@@ -222,16 +235,16 @@ body{
         z-index: 3;
         color: #232527;
         display: none;
-        animation: showb 1s ease-in-out;
+        animation: showb 1s ease-in-out forwards;
         animation-play-state: running;
     }
     @keyframes showb{
-        from {right: -50%;}
+        from {right: -50vw;}
         to {right: 0;}
     }
     @keyframes hide{
         from {right: 0;}
-        to {right: -50%;}
+        to {right: -50vw;}
     }
         #button3{
             width: 50px;
@@ -247,7 +260,7 @@ body{
             line-height: 50px;
             text-align: center;
             font-family:'Open Sans', sans-serif;
-            animation: showb3 0.7s ease-in-out;
+            animation: showb3 0.7s ease-in-out forwards;
             animation-play-state: running;
         }
         @keyframes showb3{
@@ -276,7 +289,7 @@ body{
             line-height: 50px;
             text-align: center;
             font-family:'Open Sans', sans-serif;
-            animation: showb6 0.7s ease-in-out;
+            animation: hideb6 0.7s ease-in-out forwards;
             animation-play-state: running;
         }
         @keyframes showb6{
@@ -482,7 +495,6 @@ body{
             }
             #table2{
                 width: 100%;
-                margin-bottom: 48px;
                 color: #232527;
                 margin: 0 -15px;
             }
@@ -519,11 +531,11 @@ body{
                     display: flex;
                     justify-content: space-between;
                 }
-                    .input1a{
+                    #input1a{
                         margin-right: 15px;
                         width: 100%;
                     }
-                    .input1b{
+                    #input1b{
                         margin-left: 15px;
                         width: 100%;
                     }
@@ -578,6 +590,11 @@ body{
         position: relative;
         display: block;
         width: 100%;
+        left: 0;
+        right: 0;
+    }
+    #blockbody-bg{
+        display: none;
     }
         #button3{
             display: none;
@@ -626,12 +643,45 @@ body{
             #button1{
                 margin-right:0;
             }
+        #contact{
+            height: 1300px;
+        }
+            .cell2{
+                width: 100%;
+            }
+            #input{
+                width: 100%;
+            }
+            #input1{
+                box-sizing: border-box;
+                width: 100%;
+                display: block;
+            }
+                #input1a{
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                    display: block;
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+                #input1b{
+                    margin-left: 0;
+                    display: block;
+                    width: 100%;
+                    box-sizing: border-box;
+                }
 }
 
 @media (max-width: 575px) {
     .container{
         max-width: 550px;
     }
+    #work{
+        height: 1250px;
+    }
+        td{
+            width: 100%;
+        }
     #galery>article{
         width: 100%;
     }
@@ -643,11 +693,14 @@ body{
         width: 100vw;
         height: 100vw;
     }
+        .p-text>h4{
+            margin-top: 30px;
+        }
 }
 
 @media (max-width: 470px) {
     .container{
-        max-width: 450px;
+        max-width: 460px;
     }
     .home{
         height: 480px;
@@ -662,10 +715,15 @@ body{
         #button1{
             width: 100%;
             display: block;
+            box-sizing: border-box;
         }
         #button2{
             width: 100%;
             display: block;
             margin-top: 20px;
+            box-sizing: border-box;
+        }
+        .button4{
+            margin-right: 20px;
         }
 }
