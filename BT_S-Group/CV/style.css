@@ -413,9 +413,11 @@ body{
                 }
                 .right{
                     float: right;
+                    transition: all 0.5s;
                 }
                 .left{
                     float: left;
+                    transition: all 0.5s;
                 }
                     .img{
                         width: 100%;
@@ -565,6 +567,34 @@ body{
                 display: inline-block;
                 margin-bottom: 50px;
             }
+        #foot{
+            border-top: #d4d4d4 solid 1px;
+            color: #232527;
+            height: 215px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            display: none;
+        }    
+            .icon3{
+                display: flex;
+                color: #232527;
+                font-size: 18px;
+                line-height: 18px;
+                width: 18vw;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+                .icon3>i{
+                    cursor: pointer;
+                }
+            .note2{
+                color: #232527;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 14px;
+                cursor: text;
+            }
             
 @media (max-width: 1200px) {
     .container{
@@ -619,6 +649,9 @@ body{
                 width: 50vw;
                 height: 50vw;
             }
+        #foot{
+            display: flex;
+        }
 }
 
 @media (max-width: 990px) {
