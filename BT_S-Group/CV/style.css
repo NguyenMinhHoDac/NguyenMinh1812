@@ -858,4 +858,10 @@ input {
   .button4 {
     margin-right: 20px;
   }
+  .icon3 {
+    width: 25vw;
+  }
+  .note2 {
+    font-size: 12px;
+  }
 }
