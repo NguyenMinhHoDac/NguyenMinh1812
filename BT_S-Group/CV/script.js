@@ -110,6 +110,9 @@ function hideMenu() {
     document.getElementById("tab").classList.add("move1");
     document.getElementById("menu").classList.add("hide");
     document.getElementById('blockbody').style.display="block";
+    document.getElementById('na').style.width="";
+    document.getElementById('nb').style.width="";
+    document.getElementById('nc').style.width="";
     setTimeout(function(){document.getElementById('menu').style.display="none"},500);
 }
 
@@ -119,6 +122,9 @@ function openMenu() {
   document.getElementById('menu').style.display="flex";
   document.getElementById('menu').style.opacity="none";
   setTimeout(function(){document.getElementById("menu").classList.add("open")},50);
+  document.getElementById('na').style.width="100%";
+  document.getElementById('nb').style.width="100%";
+  document.getElementById('nc').style.width="100%";
 }
 
 document.getElementById("bar").onclick = () =>{

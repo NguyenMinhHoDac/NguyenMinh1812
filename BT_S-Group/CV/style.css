@@ -111,18 +111,21 @@ button {
   top: 25%;
   width: 100%;
   border-top: solid 2px white;
+  transition: 0.5s;
 }
 #bar > span:nth-child(2) {
   height: 2px;
   width: 70%;
   top: 45%;
   border-top: solid 2px white;
+  transition: 0.5s;
 }
 #bar > span:nth-child(3) {
   height: 2px;
   top: 60%;
   width: 50%;
   border-bottom: solid 2px white;
+  transition: 0.5s;
 }
 .nav2 {
   position: fixed;
@@ -672,6 +675,7 @@ input {
 .carousel-item {
   height: 100%;
   width: auto !important;
+  margin: auto !important;
   text-align: right !important;
 }
 .carousel-item > img {
